@@ -4,13 +4,6 @@ from ball import Ball
 from score import Score
 import time
 
-# line = Turtle()
-# line.color("white")
-# line.speed("fastest")
-# line.hideturtle()
-# line.goto(0, -300)
-# line.goto(0, 300)
-
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
@@ -57,7 +50,6 @@ while game_is_on:
     if score.l_score > 5 or score.r_score > 5:
         game_is_on = False
         score.game_over()
-        # print(ball.ball_speed)
 
 
 screen.exitonclick()
